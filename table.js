@@ -1,22 +1,13 @@
+let num = prompt("Enter a number less than 20:");
 
-for(let num1 = 2; num1<=20; num1++){
-    document.write(`Table of  ${num1}` + "<br>" + "<br>" );
-        for(let i = 1; i <= 10; i++){
-            document.write(`${num1} x ${i} = ${num1 * i}`+ "<br>" );
-        }
-    document.write("<br>");
+if (num < 20) {
+ for (let i = num; i <= 20; i++) {
+    document.write(`Table of ${i}` + "<br>" + "<br>");
+    for (let j = 1; j <= 10; j++) {
+      document.write(`${i} x ${j} = ${i * j}` + "<br>");
+    }
+    document.write("<br>" + "<br>");
+ }
+} else {
+ document.write("Enter a correct number less than 20.");
 }
-
-
-let math = 87;
-let physics = 56;
-let english = 78;
-let urdu = 90;
-let chemistry = 45;
-let islamiyat = 85;
-
-let sum = math + physics + english + urdu + chemistry + islamiyat;
-let avg = (sum/600)*100;
-
-document.write("Total marks of student: " + sum + "<br>");
-document.write("Percentage: " + avg);
